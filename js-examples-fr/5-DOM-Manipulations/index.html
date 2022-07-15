@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+        background: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Bouton avec l'attribut "<strong>onclick</strong>" pour exécuter une
+      fonction et inserer un texte dans la page avec
+      "<strong>.innerText</strong>":
+    </div>
+    <button onclick="sayHello()">Dites Salut</button>
+    <br />
+    <div id="hello"></div>
+    <br />
+    <br />
+    <div><strong>addEventListener / input / .innerText</strong></div>
+    <label for="name-input1">Nom:</label>
+    <input type="text" id="name-input1" />
+    <br />
+    <button id="hello-name-button1">Dite Salut avec Mon Nom</button>
+    <br />
+    <div id="hello-name-result1"></div>
+    <br />
+    <br />
+    <div><strong>.innerHTML</strong></div>
+    <label for="name-input2">Nom:</label>
+    <input type="text" id="name-input2" />
+    <br />
+    <button id="hello-name-button2">Dite Salut avec Mon Nom</button>
+    <br />
+    <div id="hello-name-result2"></div>
+    <br />
+    <br />
+    <div>Insertions multiples avec "<strong>.insertAdjacentHTML</strong>"</div>
+    <label for="name-input3">First name:</label>
+    <input type="text" id="name-input3" />
+    <br />
+    <button id="hello-name-button3">Say Hello to Me</button>
+    <br />
+    <div id="hello-name-result3"></div>
+    <br />
+    <br />
+    <div>----------------------------------------------------------------</div>
+    <div>Afficher les contenu d'un tableau avec la boucle for</div>
+    <button id="fruits-button">Afficher Tableau</button>
+    <div id="fruits-result"></div>
+    <br />
+    <br />
+    <div>----------------------------------------------------------------</div>
+    <div>Display Array Content by "<strong>.map</strong>"</div>
+    <button id="fruits-button2">Display Array</button>
+    <div id="fruits-result2"></div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
