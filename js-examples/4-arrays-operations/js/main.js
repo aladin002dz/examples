@@ -10,13 +10,16 @@ console.log("Listing by loop===========================");
 for (var i = 0; i < cars.length; i++) {
   console.log(cars[i]);
 }
-console.log("Listing by .map===========================");
-cars.map((car) => console.log(car));
-console.log("More treatment in map ===========================");
-cars.map((car) => {
+console.log("Listing by .forEach===========================");
+cars.forEach((car) => console.log(car));
+
+console.log("More treatment with .map ===========================");
+var newCars = cars.map((car) => {
   carUpperCase = car.toUpperCase();
-  console.log(carUpperCase);
+  return carUpperCase;
 });
+console.log("New cars: ", newCars);
+
 console.log("Array of objects ===========================");
 //examples about arrays of objects
 var cars = [
@@ -37,7 +40,7 @@ for (var i = 0; i < cars.length; i++) {
   console.log("------------------------------");
 }
 console.log("Listing by map ===========================");
-cars.map((car) => {
+cars.forEach((car) => {
   console.log("brand: ", car.brand);
   console.log("year: ", car.year);
   console.log("color: ", car.color);
