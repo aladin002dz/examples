@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
@@ -17,23 +16,44 @@
   <body>
     <p>Please, Open the console to see the result.</p>
     <p>Shortcut: <strong>Ctrl + Shift + J</strong></p>
+    <!-- We can write Javascript in the same html -->
     <script>
-      //example about variables in javascript
-      var name = "John";
+      //Variables are like boxes that can contain data.
+      //they can change value during the program.
+      //Variables are declared with the "var" keyword.
+      //also with "let", or with "const" if they are not supposed to change content.
+      //They are not hold in memory until they are assigned a value.
+      var a;
+      var b;
+      var c;
+      a = 1;
+      b = 2;
+      c = a + b;
+      console.log(c);
+
+      //Variables can be decalred and assigned at the same time.
+      //This is called "declaration and assignment".
+      //Variables types can be: number, string or boolean.
+
+      var name = "John"; //Strings are sequences of characters, They are surrounded by quotes.
       var age = 30;
-      var isMarried = false;
+      var isMarried = false; //Booleans are either true or false.
       console.log("===========================");
       console.log("Variables: ");
       console.log("Name: " + name);
       console.log("Age: " + age);
       console.log("Married: " + isMarried);
       console.log("===========================");
-      //example about arrays in javascript
+
+      //Another important type of variable is array
+      //an array holds a list of items
       var cars = ["BMW", "Mercedes", "Audi"];
       console.log("===========================");
       console.log("Array: ");
       console.log(cars);
       console.log("===========================");
+
+      //Object is an important type of variable in programming
       //example about objects in javascript in JSON notation
       var person = {
         name: "John",
@@ -44,9 +64,18 @@
       console.log("Object in JSON notation: ");
       console.log(person);
       console.log("Object Data===========================");
+
+      //the objec person contains properties: person.name, person.age, person.isMarried.
       console.log("Name: " + person.name);
       console.log("Age: " + person.age);
       console.log("Married: " + person.isMarried);
+      console.log("===========================");
+
+      //Variable names can contain letters, numbers, underscores, and dollar signs.
+      //Variable names can't start with a number.
+      //Variable names can't contain spaces.
+      //Variable names can't contain special characters.
+      //Variable names can't be reserved keywords, like "for, if, ...".
     </script>
   </body>
 </html>
