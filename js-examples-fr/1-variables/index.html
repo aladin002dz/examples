@@ -18,36 +18,55 @@
     <p>SVP, Ouvre la console pour voir les resultats.</p>
     <p>Racourci Clavier: <strong>Ctrl + Shift + J</strong></p>
     <script>
-      //example about variables in javascript
-      var nom = "John";
+      //Les variables sont comme des boîtes qui peuvent contenir des données.
+      // ils peuvent changer de valeur pendant le programme.
+      //Les variables sont déclarées avec le mot clé "var".
+      //aussi avec "let", ça apporte quelques améliorations.
+      //"const" est utilisé s'ils ne sont pas censés changer de valeur.
+      var a;
+      let b;
+      let c;
+      a = 1;
+      b = 2;
+      c = a + b;
+      console.log(c);
+
+      //Les variables peuvent être déclarées et affectées en même temps.
+      // Cela s'appelle "déclaration et affectation".
+      // Les types de variables peuvent être des nombres, des chaînes de caractères (texte), ou des booléens.
+
+      var nom = "John"; //Les chaînes de caractères sont des séquences de caractères, elles sont entourées de guillemets.
       var age = 30;
-      var estMarie = false;
+      var estMarie = false; //Les booléens sont soit vrais soit faux.
       console.log("===========================");
       console.log("Variables: ");
       console.log("Nom: " + nom);
       console.log("Age: " + age);
       console.log("Marrié: " + estMarie);
       console.log("===========================");
-      //exemple sur les tableaux en javascript
+
+      //Un autre type de variables important est le tableau
+      //un tableau contient une liste d'éléments
       var voitures = ["Peugeot", "Renault", "Citroen"];
       console.log("===========================");
       console.log("Tableau: ");
       console.log(voitures);
       console.log("===========================");
 
-      //exemple sur les objets en javascript en notation JSON
+      //L'objet est un type de variable important en programmation
+      //exemple d'objets en javascript en notation JSON
       var personne = {
         nom: "John",
         age: 30,
         estMarie: false,
       };
       console.log("===========================");
-      console.log("Object in JSON notation: ");
+      console.log("Objet en notation JSON:");
       console.log(personne);
-      console.log("Object Data===========================");
-      console.log("Name: " + personne.nom);
+      console.log("Données d'objet===========================");
+      console.log("Nom: " + personne.nom);
       console.log("Age: " + personne.age);
-      console.log("Married: " + personne.estMarie);
+      console.log("Marrié: " + personne.estMarie);
     </script>
   </body>
 </html>
